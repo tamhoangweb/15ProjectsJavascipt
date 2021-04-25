@@ -13,6 +13,13 @@ btns.forEach((btn) => {
     } else {
       count = 0;
     }
+    if (count == 0) {
+      value.style.color = "#000";
+    } else if (count < 0) {
+      value.style.color = "red";
+    } else {
+      value.style.color = "green";
+    }
     value.textContent = count;
   });
 });
